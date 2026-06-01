@@ -25,7 +25,7 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Social Links */}
+      {/* Social Links 5 */}
       <div className="flex gap-6 text-slate-400">
         <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
           <Github className="w-6 h-6" />
