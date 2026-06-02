@@ -43,9 +43,18 @@ export default function Contact() {
         <p className="text-slate-400 mb-3 text-sm">
           Have an exciting project or opportunity? Shoot me a message!
         </p>
-        <p className="text-slate-500 mb-8 text-sm">
-          Email: tharakamahesh806@gmail.com | Phone: +765228504 | Kegalle, Sri
-          Lanka
+        <p className="mb-8 text-sm text-slate-500">
+          <span className="rounded-full bg-blue-500/10 px-2 py-1 font-medium text-blue-300 ring-1 ring-inset ring-blue-400/20">
+            Email: tharakamahesh806@gmail.com
+          </span>{" "}
+          <span className="mx-1 text-slate-600">|</span>{" "}
+          <span className="rounded-full bg-emerald-500/10 px-2 py-1 font-medium text-emerald-300 ring-1 ring-inset ring-emerald-400/20">
+            Phone: +765228504
+          </span>{" "}
+          <span className="mx-1 text-slate-600">|</span>{" "}
+          <span className="rounded-full bg-amber-500/10 px-2 py-1 font-medium text-amber-300 ring-1 ring-inset ring-amber-400/20">
+            Kegalle, Sri Lanka
+          </span>
         </p>
 
         <form ref={form} onSubmit={sendEmail} className="space-y-4 text-left">
