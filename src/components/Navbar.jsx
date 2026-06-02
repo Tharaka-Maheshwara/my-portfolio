@@ -1,7 +1,8 @@
 import React from "react";
 
 export default function Navbar() {
-  const cvDownloadUrl = "https://drive.google.com/uc?export=download&id=1ZLvFKbURk3Ar6QiLUAKaZBerdgq_WWCP";
+  const cvDownloadUrl =
+    "https://drive.google.com/uc?export=download&id=1ZLvFKbURk3Ar6QiLUAKaZBerdgq_WWCP";
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-900/80 bg-slate-950/85 backdrop-blur">
