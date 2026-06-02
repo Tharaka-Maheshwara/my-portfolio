@@ -155,8 +155,6 @@ export default function Projects() {
             </article>
           ))}
         </div>
-
-        
       </div>
     </section>
   );
