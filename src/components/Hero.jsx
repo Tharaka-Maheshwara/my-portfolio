@@ -3,73 +3,52 @@ import { Globe, Mail, ArrowUpRight } from "lucide-react";
 import profileImg from "../assets/Dp/my image.jpeg";
 
 export default function Hero() {
+  const cvDownloadUrl = "https://drive.google.com/uc?export=download&id=1ZLvFKbURk3Ar6QiLUAKaZBerdgq_WWCP";
+
   return (
-    <section
-      id="hero"
-      className="h-screen flex flex-col md:flex-row md:justify-center md:items-center bg-slate-950 text-white text-center md:text-left px-4 relative overflow-hidden gap-8"
-    >
-      {/* Decorative background glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div className="flex flex-col items-center md:items-start md:flex-row gap-8">
-        <img
-          src={profileImg}
-          alt="Tharaka Kumarathunga"
-          className="w-40 h-40 rounded-full object-cover border-2 border-slate-800 shadow-lg"
-        />
-
-        <div>
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-linear-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent tracking-tight">
-            Hi, I'm Tharaka Kumarathunga
-          </h1>
-          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 font-light">
-            A passionate Full-Stack Developer specializing in building
-            beautiful, high-performing web applications.
-          </p>
+    <section id="hero" className="min-h-screen flex items-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white py-20">
+      <div className="mx-auto w-full max-w-4xl text-center px-6">
+        <div className="mx-auto w-fit">
+          <img src={profileImg} alt="Tharaka Kumarathunga" className="w-40 h-40 rounded-full object-cover border-4 border-indigo-100 dark:border-slate-800 shadow-lg" />
         </div>
-      </div>
 
-      {/* Action Buttons */}
-      <div className="flex flex-wrap justify-center gap-4 mb-10">
-        <a
-          href="#projects"
-          className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-blue-600/20 flex items-center gap-2 group"
-        >
-          View My Work
-          <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition" />
-        </a>
-        <a
-          href="#contact"
-          className="border border-slate-800 hover:bg-slate-900 px-6 py-3 rounded-lg font-medium transition text-slate-300"
-        >
-          Contact Me
-        </a>
-      </div>
+        <div className="mt-4 inline-block rounded-full bg-indigo-50/60 dark:bg-slate-900/40 px-4 py-1 text-sm text-slate-600 dark:text-slate-300">
+          <span className="inline-block w-2 h-2 bg-emerald-400 rounded-full mr-2 align-middle"></span>
+          Available for new opportunities
+        </div>
 
-      {/* Social Links */}
-      <div className="flex gap-6 text-slate-400">
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-blue-400 transition"
-        >
-          <Globe className="w-6 h-6" />
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-blue-400 transition"
-        >
-          <Globe className="w-6 h-6" />
-        </a>
-        <a
-          href="mailto:youremail@example.com"
-          className="hover:text-blue-400 transition"
-        >
-          <Mail className="w-6 h-6" />
-        </a>
+        <h1 className="mt-8 text-5xl md:text-6xl font-extrabold leading-tight text-slate-900 dark:text-white">
+          Tharaka Kumarathunga
+        </h1>
+        <p className="mt-3 text-blue-600 dark:text-blue-400 font-medium">Full-Stack Developer — MERN</p>
+
+        <p className="mt-6 text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-7">
+          I design and build high-performance web applications that solve real user
+          problems. Experienced with React, Node.js, Nest.js, PostgreSQL, and
+          cloud deployments. Passionate about developer experience and scalable
+          architectures.
+        </p>
+
+        <div className="mt-8 flex justify-center items-center gap-4">
+          <a href="#projects" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-3 rounded-lg shadow-md">
+            View My Work <ArrowUpRight className="w-4 h-4" />
+          </a>
+          <a href={cvDownloadUrl} target="_blank" rel="noreferrer" download className="inline-flex items-center gap-2 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 px-5 py-3 rounded-lg bg-transparent">
+            Download Résumé
+          </a>
+        </div>
+
+        <div className="mt-8 flex justify-center gap-4">
+          <a href="https://github.com" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 shadow hover:bg-slate-200">
+            <Globe className="w-5 h-5" />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 shadow hover:bg-slate-200">
+            <Globe className="w-5 h-5" />
+          </a>
+          <a href="mailto:tharakamahesh806@gmail.com" className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 shadow hover:bg-slate-200">
+            <Mail className="w-5 h-5" />
+          </a>
+        </div>
       </div>
     </section>
   );
