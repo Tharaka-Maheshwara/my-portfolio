@@ -1,10 +1,63 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Globe, Mail, ArrowUpRight } from "lucide-react";
 import profileImg from "../assets/Dp/my image.jpeg";
 
 export default function Hero() {
+  function Counter({ end, suffix = "", start = false, duration = 1200 }) {
+    const [value, setValue] = useState(0);
+    const rafRef = useRef(null);
+
+    useEffect(() => {
+      if (!start) return;
+      let startTime = null;
+
+      function tick(time) {
+        if (!startTime) startTime = time;
+        const progress = Math.min((time - startTime) / duration, 1);
+        const current = Math.floor(progress * end);
+        setValue(current);
+        if (progress < 1) {
+          rafRef.current = requestAnimationFrame(tick);
+        } else {
+          setValue(end);
+        }
+      }
+
+      rafRef.current = requestAnimationFrame(tick);
+      return () => cancelAnimationFrame(rafRef.current);
+    }, [start, end, duration]);
+
+    return (
+      <div className="text-2xl font-extrabold text-indigo-600">
+        {value}
+        {suffix}
+      </div>
+    );
+  }
+
   const cvDownloadUrl =
     "https://drive.google.com/uc?export=download&id=1ZLvFKbURk3Ar6QiLUAKaZBerdgq_WWCP";
+
+  const statsRef = useRef(null);
+  const [startCount, setStartCount] = useState(false);
+
+  useEffect(() => {
+    const el = statsRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setStartCount(true);
+            obs.disconnect();
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
 
   return (
     <section
@@ -83,30 +136,33 @@ export default function Hero() {
         </div>
 
         <div className="mt-12">
-          <div className="mx-auto grid w-full max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
+          <div
+            ref={statsRef}
+            className="mx-auto grid w-full max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4"
+          >
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
-              <div className="text-2xl font-extrabold text-indigo-600">3+</div>
+              <Counter end={3} suffix="+" start={startCount} />
               <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
                 Years of Experience
               </div>
             </div>
 
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
-              <div className="text-2xl font-extrabold text-indigo-600">20+</div>
+              <Counter end={20} suffix="+" start={startCount} />
               <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
                 Projects Delivered
               </div>
             </div>
 
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
-              <div className="text-2xl font-extrabold text-indigo-600">10</div>
+              <Counter end={10} start={startCount} />
               <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
                 Companies Served
               </div>
             </div>
 
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
-              <div className="text-2xl font-extrabold text-indigo-600">99%</div>
+              <Counter end={99} suffix="%" start={startCount} />
               <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
                 Client Satisfaction
               </div>
