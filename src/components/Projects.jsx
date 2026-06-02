@@ -2,22 +2,34 @@ import React from "react";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "sDesk",
     description:
-      "A fast, responsive personal site to present work, skills, and contact details.",
-    stack: "React, Vite, Tailwind CSS",
+      "Incident management system rebuilt for SLT Mobitel with new features for internal incident handling.",
+    stack: "React.js, Nest.js, PostgreSQL, Redux Saga, Azure AD, GitHub",
   },
   {
-    title: "Task Dashboard",
+    title: "Nenasa Attendance",
     description:
-      "An organized dashboard concept for tracking priorities and progress.",
-    stack: "React, UI Components, API Integration",
+      "Attendance management platform for students, teachers, and classes at Nenasa Higher Education Institute.",
+    stack: "React.js, Nest.js, MySQL, Azure AD, GitHub",
   },
   {
-    title: "E-Commerce UI",
+    title: "Employee Management Systems",
     description:
-      "A clean storefront interface focused on browsing and conversion.",
-    stack: "Frontend Design, Responsive Layouts",
+      "MERN stack application for searching, adding, updating, deleting, and downloading employee lists.",
+    stack: "React.js, Express.js, Node.js, MongoDB, Bootstrap, GitHub",
+  },
+  {
+    title: "Stock Management Systems",
+    description:
+      "Business flow management system for Ranveli Enterprises to support buying and selling operations.",
+    stack: "React.js, Firebase, Bootstrap, Vercel, GitHub",
+  },
+  {
+    title: "UniStay",
+    description:
+      "Mobile application for private accommodation providers and seekers, built with Flutter and Firebase.",
+    stack: "Flutter, Firebase, Figma",
   },
 ];
 
@@ -30,7 +42,7 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-10">
           <p className="mb-2 text-sm uppercase tracking-[0.3em] text-slate-500">
-            Selected Work
+            CV Projects
           </p>
           <h2 className="text-3xl font-bold md:text-4xl">Projects</h2>
         </div>

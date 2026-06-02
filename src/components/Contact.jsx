@@ -32,9 +32,10 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-20 bg-slate-950 text-white px-8 border-t border-slate-900">
-      <div className="max-w-md mx-auto text-center">
+      <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-        <p className="text-slate-400 mb-8 text-sm">Have an exciting project or opportunity? Shoot me a message!</p>
+        <p className="text-slate-400 mb-3 text-sm">Have an exciting project or opportunity? Shoot me a message!</p>
+        <p className="text-slate-500 mb-8 text-sm">Email: tharakamahesh806@gmail.com | Phone: +765228504 | Kegalle, Sri Lanka</p>
         
         <form ref={form} onSubmit={sendEmail} className="space-y-4 text-left">
           <input 
