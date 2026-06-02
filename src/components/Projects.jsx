@@ -19,7 +19,8 @@ const projects = [
   {
     title: "Nenasa Attendance",
     category: "Cloud-Based SaaS",
-    sourceUrl: "https://github.com/Tharaka-Maheshwara/online-attendance-system-nenasa.git",
+    sourceUrl:
+      "https://github.com/Tharaka-Maheshwara/online-attendance-system-nenasa.git",
     description:
       "Attendance management platform for students, teachers, and classes at Nenasa Higher Education Institute.",
     highlights: [
@@ -32,7 +33,8 @@ const projects = [
   {
     title: "Employee Management Systems",
     category: "Open Source Internal Tool",
-    sourceUrl: "https://github.com/Tharaka-Maheshwara/Employee-Management-System.git",
+    sourceUrl:
+      "https://github.com/Tharaka-Maheshwara/Employee-Management-System.git",
     description:
       "MERN stack application for searching, adding, updating, deleting, and downloading employee lists.",
     highlights: [
