@@ -16,7 +16,7 @@ export default function Hero() {
           <img
             src={profileImg}
             alt="Tharaka Kumarathunga"
-            className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-indigo-100 dark:border-slate-800 shadow-lg"
+            className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover object-[50%_20%] border-4 border-indigo-100 dark:border-slate-800 shadow-lg"
           />
         </div>
 
