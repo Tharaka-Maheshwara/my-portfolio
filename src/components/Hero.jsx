@@ -12,15 +12,19 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="flex flex-col items-center md:items-start md:flex-row gap-8">
-        <img src={profileImg} alt="Tharaka Kumarathunga" className="w-40 h-40 rounded-full object-cover border-2 border-slate-800 shadow-lg" />
+        <img
+          src={profileImg}
+          alt="Tharaka Kumarathunga"
+          className="w-40 h-40 rounded-full object-cover border-2 border-slate-800 shadow-lg"
+        />
 
         <div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-linear-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent tracking-tight">
             Hi, I'm Tharaka Kumarathunga
           </h1>
           <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 font-light">
-            A passionate Full-Stack Developer specializing in building beautiful,
-            high-performing web applications.
+            A passionate Full-Stack Developer specializing in building
+            beautiful, high-performing web applications.
           </p>
         </div>
       </div>
