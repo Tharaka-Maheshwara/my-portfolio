@@ -1,5 +1,33 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Globe, Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
+
+function GitHubIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.28 3.438 9.75 8.205 11.33.6.11.82-.26.82-.58 0-.29-.01-1.05-.015-2.05-3.338.73-4.042-1.61-4.042-1.61-.546-1.38-1.333-1.75-1.333-1.75-1.09-.75.083-.74.083-.74 1.205.085 1.84 1.24 1.84 1.24 1.07 1.84 2.807 1.31 3.492 1 .108-.78.418-1.31.76-1.61-2.665-.305-5.466-1.335-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.125-.305-.535-1.53.115-3.19 0 0 1.005-.322 3.295 1.23.955-.266 1.98-.399 3-.405 1.02.006 2.045.139 3 .405 2.29-1.552 3.295-1.23 3.295-1.23.65 1.66.24 2.885.12 3.19.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.62-5.475 5.915.43.37.815 1.096.815 2.21 0 1.595-.015 2.877-.015 3.27 0 .32.21.695.825.575C20.565 22.245 24 17.78 24 12.5 24 5.87 18.63 0.5 12 0.5z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48c0 1.64 1.34 2.98 2.98 2.98 1.64 0 2.98-1.34 2.98-2.98C7.96 4.84 6.62 3.5 4.98 3.5zM2.4 8.98h5.16V21H2.4V8.98zM9.6 8.98h4.95v1.62h.07c.69-1.3 2.38-2.68 4.9-2.68 5.24 0 6.2 3.45 6.2 7.93V21h-5.16v-5.4c0-1.29-.03-2.96-1.8-2.96-1.8 0-2.07 1.4-2.07 2.86V21H9.6V8.98z" />
+    </svg>
+  );
+}
 import profileImg from "../assets/Dp/my image.jpeg";
 
 export default function Hero() {
@@ -112,12 +140,12 @@ export default function Hero() {
 
         <div className="mt-8 flex justify-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/ItsME-TM"
             target="_blank"
             rel="noreferrer"
             className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 shadow hover:bg-slate-200"
           >
-            <Globe className="w-5 h-5" />
+            <GitHubIcon className="w-5 h-5" />
           </a>
           <a
             href="https://linkedin.com"
@@ -125,7 +153,7 @@ export default function Hero() {
             rel="noreferrer"
             className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 shadow hover:bg-slate-200"
           >
-            <Globe className="w-5 h-5" />
+            <LinkedInIcon className="w-5 h-5" />
           </a>
           <a
             href="mailto:tharakamahesh806@gmail.com"
