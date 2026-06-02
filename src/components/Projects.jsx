@@ -6,6 +6,7 @@ const projects = [
     title: "sDesk",
     category: "Full-Stack Web Application",
     featured: true,
+    sourceUrl: "https://github.com/ItsME-TM/sDesk-Frontend.git",
     description:
       "Incident management system rebuilt for SLT Mobitel with new features for internal incident handling.",
     highlights: [
@@ -18,6 +19,7 @@ const projects = [
   {
     title: "Nenasa Attendance",
     category: "Cloud-Based SaaS",
+    sourceUrl: "https://github.com/Tharaka-Maheshwara/online-attendance-system-nenasa.git",
     description:
       "Attendance management platform for students, teachers, and classes at Nenasa Higher Education Institute.",
     highlights: [
@@ -30,6 +32,7 @@ const projects = [
   {
     title: "Employee Management Systems",
     category: "Open Source Internal Tool",
+    sourceUrl: "https://github.com/Tharaka-Maheshwara/Employee-Management-System.git",
     description:
       "MERN stack application for searching, adding, updating, deleting, and downloading employee lists.",
     highlights: [
@@ -42,6 +45,7 @@ const projects = [
   {
     title: "Stock Management Systems",
     category: "Business Process System",
+    sourceUrl: "https://github.com/Tharaka-Maheshwara/Active-Base-System.git",
     description:
       "Business flow management system for Ranveli Enterprises to support buying and selling operations.",
     highlights: [
@@ -54,6 +58,7 @@ const projects = [
   {
     title: "UniStay",
     category: "Mobile Application",
+    sourceUrl: "https://github.com/PrasadMadhushanka/community_project.git",
     description:
       "Mobile application for private accommodation providers and seekers, built with Flutter and Firebase.",
     highlights: [
@@ -135,18 +140,13 @@ export default function Projects() {
               <div className="mt-6 border-t border-slate-200 pt-4 dark:border-slate-800">
                 <div className="flex flex-wrap gap-5 text-sm text-slate-700 dark:text-slate-300">
                   <a
-                    href="#projects"
+                    href={project.sourceUrl ?? "#projects"}
+                    target={project.sourceUrl ? "_blank" : undefined}
+                    rel={project.sourceUrl ? "noreferrer" : undefined}
                     className="inline-flex items-center gap-2 transition hover:text-indigo-600 dark:hover:text-indigo-400"
                   >
                     <Code2 className="h-4 w-4" />
                     Source Code
-                  </a>
-                  <a
-                    href="#projects"
-                    className="inline-flex items-center gap-2 transition hover:text-indigo-600 dark:hover:text-indigo-400"
-                  >
-                    <LayoutGrid className="h-4 w-4" />
-                    Live Demo
                   </a>
                 </div>
               </div>
