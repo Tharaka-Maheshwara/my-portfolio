@@ -53,7 +53,7 @@ export default function Hero() {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
     obs.observe(el);
     return () => obs.disconnect();
