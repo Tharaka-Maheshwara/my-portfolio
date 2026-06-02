@@ -13,6 +13,7 @@ const skillGroups = [
       "Node.js",
       "Nest.js",
       "Express.js",
+      "Laravel",
       "Redux Saga",
       "Bootstrap",
       "Tailwind CSS",
