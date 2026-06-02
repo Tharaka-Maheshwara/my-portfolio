@@ -134,11 +134,17 @@ export default function Projects() {
 
               <div className="mt-6 border-t border-slate-200 pt-4 dark:border-slate-800">
                 <div className="flex flex-wrap gap-5 text-sm text-slate-700 dark:text-slate-300">
-                  <a href="#projects" className="inline-flex items-center gap-2 transition hover:text-indigo-600 dark:hover:text-indigo-400">
+                  <a
+                    href="#projects"
+                    className="inline-flex items-center gap-2 transition hover:text-indigo-600 dark:hover:text-indigo-400"
+                  >
                     <Code2 className="h-4 w-4" />
                     Source Code
                   </a>
-                  <a href="#projects" className="inline-flex items-center gap-2 transition hover:text-indigo-600 dark:hover:text-indigo-400">
+                  <a
+                    href="#projects"
+                    className="inline-flex items-center gap-2 transition hover:text-indigo-600 dark:hover:text-indigo-400"
+                  >
                     <LayoutGrid className="h-4 w-4" />
                     Live Demo
                   </a>
