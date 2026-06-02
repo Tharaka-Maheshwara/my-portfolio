@@ -156,9 +156,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="mt-10 text-center text-sm text-slate-500 dark:text-slate-400">
-          More details available on request or through the CV.
-        </div>
+        
       </div>
     </section>
   );

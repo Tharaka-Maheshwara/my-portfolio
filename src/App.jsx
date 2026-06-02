@@ -8,7 +8,6 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import Volunteering from "./components/Volunteering";
-import References from "./components/References";
 import Contact from "./components/Contact";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
       <Projects />
       <Certificates />
       <Volunteering />
-      <References />
       <Contact />
     </div>
   );
