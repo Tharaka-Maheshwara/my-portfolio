@@ -86,22 +86,30 @@ export default function Hero() {
           <div className="mx-auto grid w-full max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
               <div className="text-2xl font-extrabold text-indigo-600">3+</div>
-              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">Years of Experience</div>
+              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
+                Years of Experience
+              </div>
             </div>
 
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
               <div className="text-2xl font-extrabold text-indigo-600">20+</div>
-              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">Projects Delivered</div>
+              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
+                Projects Delivered
+              </div>
             </div>
 
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
               <div className="text-2xl font-extrabold text-indigo-600">10</div>
-              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">Companies Served</div>
+              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
+                Companies Served
+              </div>
             </div>
 
             <div className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 text-center shadow-sm">
               <div className="text-2xl font-extrabold text-indigo-600">99%</div>
-              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">Client Satisfaction</div>
+              <div className="mt-1 text-xs text-slate-600 dark:text-slate-300">
+                Client Satisfaction
+              </div>
             </div>
           </div>
         </div>
