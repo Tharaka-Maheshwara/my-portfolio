@@ -52,9 +52,7 @@ export default function Contact() {
         publicKey,
       );
 
-      setStatusMessage(
-        "Your message has been sent successfully. I will reply shortly.",
-      );
+      setStatusMessage("Your message has been sent successfully.");
       form.current.reset();
     } catch (error) {
       setStatusMessage(
