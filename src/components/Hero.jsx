@@ -110,7 +110,7 @@ export default function Hero() {
           Tharaka Kumarathunga
         </h1>
         <p className="mt-3 text-blue-600 dark:text-blue-400 font-medium">
-          Full-Stack Developer 
+          Full-Stack Developer
         </p>
 
         <p className="mt-6 text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-7">
