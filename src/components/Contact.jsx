@@ -52,10 +52,14 @@ export default function Contact() {
         publicKey,
       );
 
-      setStatusMessage("Your message has been sent successfully. I will reply shortly.");
+      setStatusMessage(
+        "Your message has been sent successfully. I will reply shortly.",
+      );
       form.current.reset();
     } catch (error) {
-      setStatusMessage("Unable to send your message right now. Please try again.");
+      setStatusMessage(
+        "Unable to send your message right now. Please try again.",
+      );
       console.error(error);
     } finally {
       setIsSending(false);
@@ -69,36 +73,57 @@ export default function Contact() {
     >
       <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
         <div>
-          <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Contact</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
+            Contact
+          </p>
           <h2 className="mt-3 text-4xl font-extrabold">Get In Touch</h2>
           <p className="mt-4 max-w-xl text-sm leading-7 text-slate-400">
-            Have a project, internship, or collaboration in mind? Send a message and I&apos;ll get back to you as soon as possible.
+            Have a project, internship, or collaboration in mind? Send a message
+            and I&apos;ll get back to you as soon as possible.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             <div className="flex flex-col justify-center rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Email</p>
-              <p className="mt-2 text-sm text-slate-200 break-words whitespace-normal">{recipientEmail}</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                Email
+              </p>
+              <p className="mt-2 text-sm text-slate-200 break-words whitespace-normal">
+                {recipientEmail}
+              </p>
             </div>
             <div className="flex flex-col justify-center rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Phone</p>
-              <p className="mt-2 text-sm text-slate-200 break-words whitespace-normal">+94 76 522 8504</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                Phone
+              </p>
+              <p className="mt-2 text-sm text-slate-200 break-words whitespace-normal">
+                +94 76 522 8504
+              </p>
             </div>
             <div className="flex flex-col justify-center rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Location</p>
-              <p className="mt-2 text-sm text-slate-200 break-words whitespace-normal">Kegalle, Sri Lanka</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                Location
+              </p>
+              <p className="mt-2 text-sm text-slate-200 break-words whitespace-normal">
+                Kegalle, Sri Lanka
+              </p>
             </div>
           </div>
 
           <div className="mt-6 space-y-4">
             <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Response Time</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                Response Time
+              </p>
               <p className="mt-2 text-sm text-slate-200">Within 24 hours</p>
-              <p className="mt-2 text-xs text-slate-400">I check messages every working day and respond promptly.</p>
+              <p className="mt-2 text-xs text-slate-400">
+                I check messages every working day and respond promptly.
+              </p>
             </div>
 
             <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Currently open to</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                Currently open to
+              </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-200 list-inside">
                 <li>Senior / Staff engineering roles</li>
                 <li>Technical leadership positions</li>
@@ -119,7 +144,12 @@ export default function Contact() {
           <div className="space-y-4 text-left">
             <div className="grid gap-4 md:grid-cols-2">
               <div>
-                <label htmlFor="name" className="mb-2 block text-sm text-slate-300">Full Name</label>
+                <label
+                  htmlFor="name"
+                  className="mb-2 block text-sm text-slate-300"
+                >
+                  Full Name
+                </label>
                 <input
                   id="name"
                   type="text"
@@ -131,7 +161,12 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="mb-2 block text-sm text-slate-300">Email Address</label>
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm text-slate-300"
+                >
+                  Email Address
+                </label>
                 <input
                   id="email"
                   type="email"
@@ -144,7 +179,12 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="subject" className="mb-2 block text-sm text-slate-300">Subject</label>
+              <label
+                htmlFor="subject"
+                className="mb-2 block text-sm text-slate-300"
+              >
+                Subject
+              </label>
               <input
                 id="subject"
                 type="text"
@@ -155,7 +195,12 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="message" className="mb-2 block text-sm text-slate-300">Message</label>
+              <label
+                htmlFor="message"
+                className="mb-2 block text-sm text-slate-300"
+              >
+                Message
+              </label>
               <textarea
                 id="message"
                 name="message"
@@ -175,7 +220,9 @@ export default function Contact() {
             </button>
 
             {statusMessage && (
-              <p className="text-sm font-medium text-blue-300">{statusMessage}</p>
+              <p className="text-sm font-medium text-blue-300">
+                {statusMessage}
+              </p>
             )}
           </div>
         </form>
