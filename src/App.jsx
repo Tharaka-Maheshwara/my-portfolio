@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import Volunteering from "./components/Volunteering";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function WhatsAppIcon({ className }) {
   return (
@@ -41,6 +42,7 @@ function App() {
       <Certificates />
       <Volunteering />
       <Contact />
+      <Footer />
 
       <a
         href={whatsappUrl}
