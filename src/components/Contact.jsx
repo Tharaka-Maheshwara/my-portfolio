@@ -53,7 +53,9 @@ export default function Contact() {
       setStatusMessage("Your message has been sent successfully.");
       form.current.reset();
     } catch (error) {
-      setStatusMessage("Unable to send your message right now. Please try again.");
+      setStatusMessage(
+        "Unable to send your message right now. Please try again.",
+      );
       console.error(error);
     } finally {
       setIsSending(false);
@@ -107,7 +109,10 @@ export default function Contact() {
 
           <div className="space-y-4 text-left">
             <div>
-              <label htmlFor="name" className="mb-2 block text-sm text-slate-300">
+              <label
+                htmlFor="name"
+                className="mb-2 block text-sm text-slate-300"
+              >
                 Your Name
               </label>
               <input
@@ -121,7 +126,10 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="email" className="mb-2 block text-sm text-slate-300">
+              <label
+                htmlFor="email"
+                className="mb-2 block text-sm text-slate-300"
+              >
                 Your Email
               </label>
               <input
@@ -135,7 +143,10 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="message" className="mb-2 block text-sm text-slate-300">
+              <label
+                htmlFor="message"
+                className="mb-2 block text-sm text-slate-300"
+              >
                 Message
               </label>
               <textarea
@@ -157,7 +168,9 @@ export default function Contact() {
             </button>
 
             {statusMessage && (
-              <p className="text-sm font-medium text-blue-300">{statusMessage}</p>
+              <p className="text-sm font-medium text-blue-300">
+                {statusMessage}
+              </p>
             )}
           </div>
         </form>
