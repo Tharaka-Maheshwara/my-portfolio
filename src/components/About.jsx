@@ -37,27 +37,17 @@ export default function About() {
           {/* Left: paragraphs */}
           <div className="prose max-w-none text-slate-700 dark:text-slate-300">
             <p>
-              I'm <strong>Tharaka Kumarathunga</strong>, a Full-Stack Developer
-              focused on the MERN stack. I am currently pursuing a BSc (Hons) in
-              Computing and Information Systems at Sabaragamuwa University of
-              Sri Lanka and have practical industry experience through
-              internships and delivered projects.
-            </p>
-
-            <p>
-              During my Software Engineer internship at{" "}
-              <strong>SLT Mobitel PLC</strong> I contributed to internal systems
-              and worked on the <em>sDesk</em> incident management platform,
-              implementing features and improving system reliability.
-            </p>
-
-            <p>
-              I've delivered projects across web and mobile platforms including{" "}
-              <em>sDesk</em>, <em>Nenasa Attendance</em>,{" "}
-              <em>Employee Management Systems</em>,{" "}
-              <em>Stock Management Systems</em>, and <em>UniStay</em>. My stack
-              experience includes React, Nest.js, Node.js, PostgreSQL, MySQL,
-              MongoDB, and cloud deployments.
+              Full Stack Software Engineer with over 2+ years of experience in
+              frontend and backend development, REST API integration, database
+              management, and Agile methodologies, gained through an internship
+              at SLT Mobitel PLC and ongoing freelance work. Currently working
+              as a Freelance Software Engineer, developing and delivering custom
+              web and business applications based on client requirements. Skilled
+              in React, Next.js, NestJS, Node.js, Laravel, PostgreSQL, MySQL,
+              MongoDB, and Firebase, with hands-on experience in application
+              testing, debugging, authentication, and deployment, focused on
+              building clean, maintainable, and user-friendly software
+              solutions.
             </p>
 
             <ul className="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-400">
