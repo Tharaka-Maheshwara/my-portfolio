@@ -42,12 +42,12 @@ export default function About() {
               management, and Agile methodologies, gained through an internship
               at SLT Mobitel PLC and ongoing freelance work. Currently working
               as a Freelance Software Engineer, developing and delivering custom
-              web and business applications based on client requirements. Skilled
-              in React, Next.js, NestJS, Node.js, Laravel, PostgreSQL, MySQL,
-              MongoDB, and Firebase, with hands-on experience in application
-              testing, debugging, authentication, and deployment, focused on
-              building clean, maintainable, and user-friendly software
-              solutions.
+              web and business applications based on client requirements.
+              Skilled in React, Next.js, NestJS, Node.js, Laravel, PostgreSQL,
+              MySQL, MongoDB, and Firebase, with hands-on experience in
+              application testing, debugging, authentication, and deployment,
+              focused on building clean, maintainable, and user-friendly
+              software solutions.
             </p>
 
             <ul className="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-400">
