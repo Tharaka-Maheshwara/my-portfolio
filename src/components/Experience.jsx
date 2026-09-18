@@ -79,7 +79,9 @@ export default function Experience() {
                 {experience.summary}
               </p>
               <p className="mt-4 text-sm text-slate-500">
-                <span className="font-semibold text-slate-400">Technologies:</span>{" "}
+                <span className="font-semibold text-slate-400">
+                  Technologies:
+                </span>{" "}
                 {experience.technologies}
               </p>
               {experience.link && (
