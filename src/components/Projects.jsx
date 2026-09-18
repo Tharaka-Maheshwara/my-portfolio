@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, Code2, Rocket, LayoutGrid } from "lucide-react";
+import { Code2, Rocket } from "lucide-react";
 
 const projects = [
   {

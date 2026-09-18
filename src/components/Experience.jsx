@@ -19,6 +19,7 @@ const experiences = [
     summary:
       "Delivered an online appointment booking and management system with an admin panel for managing appointments and customer information. Integrated Google Calendar so new bookings are saved automatically and trigger reminders, helping reduce missed appointments.",
     technologies: "Next.js, Laravel, Firebase, Tailwind CSS, Google OAuth",
+    link: "https://misautoac-new.vercel.app/",
   },
   {
     role: "Software Engineer Intern",
@@ -91,7 +92,7 @@ export default function Experience() {
                   rel="noreferrer"
                   className="mt-4 inline-flex text-sm font-medium text-indigo-400 transition-colors hover:text-indigo-300"
                 >
-                  View live project
+                  View live product
                 </a>
               )}
             </article>
